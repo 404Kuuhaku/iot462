@@ -1,0 +1,81 @@
+* {
+  font-family: "Mitr", sans-serif;
+}
+body {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(4, 141, 111),
+    rgb(164, 230, 123)
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #555;
+}
+section {
+  width: 70%;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 5rem;
+  font-weight: 400;
+  color: white;
+}
+
+.weather {
+  background-color: white;
+  width: 100%;
+  height: 10rem;
+  padding: 1rem;
+  border-radius: 3rem;
+  display: flex;
+  justify-content: space-around;
+
+  .content-container {
+    display: flex;
+    width: 30%;
+  }
+  .content-container img {
+    width: 10rem;
+    height: auto;
+  }
+}
+
+.setting {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem auto;
+
+  .control {
+    background-color: white;
+    width: 45%;
+    padding: 1rem;
+    border-radius: 3rem;
+
+    .container {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      h1 {
+        color: rgb(108, 212, 178);
+        font-weight: 700;
+        margin: 0;
+      }
+      button {
+        color: white;
+        border: 0;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        font-size: 1.25rem;
+        margin: 1rem 0;
+      }
+      .green-btn {
+        background-color: rgb(108, 212, 178);
+      }
+      .grey-btn {
+        background-color: #999;
+      }
+    }
+  }
+}
