@@ -1,6 +1,7 @@
 * {
   font-family: "Mitr", sans-serif;
 }
+
 body {
   background-image: linear-gradient(
     to bottom right,
@@ -11,11 +12,14 @@ body {
   background-size: cover;
   color: #555;
 }
+
 section {
-  width: 70%;
+  width: 50%;
   margin: 0 auto;
+  padding: 10rem 0;
 }
-h1 {
+
+.station {
   font-size: 5rem;
   font-weight: 400;
   color: white;
@@ -24,32 +28,63 @@ h1 {
 .weather {
   background-color: white;
   width: 100%;
-  height: 10rem;
+  height: 12rem;
   padding: 1rem;
   border-radius: 3rem;
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
 
-  .content-container {
+  .container {
     display: flex;
     width: 30%;
-  }
-  .content-container img {
-    width: 10rem;
-    height: auto;
+    margin: 0;
+    padding: 0;
+
+    .img-container {
+      width: 30%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    .content-container {
+      width: 70%;
+      h1, p {
+        display: inline;
+      }
+      h1 {
+        font-size: 3rem;
+        font-weight: 500;
+        color: #333;
+      }
+      h2 {
+        font-size: 1.75rem;
+        font-weight: 400;
+      }
+      p {
+        font-size: 1.5rem;
+        font-weight: 500;
+      }
+    }
   }
 }
 
 .setting {
   display: flex;
   justify-content: space-between;
-  margin: 1rem auto;
+  margin: 3rem auto;
 
   .control {
     background-color: white;
     width: 45%;
+    height: 40rem;
     padding: 1rem;
     border-radius: 3rem;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
 
     .container {
       width: 80%;
@@ -59,22 +94,34 @@ h1 {
 
       h1 {
         color: rgb(108, 212, 178);
-        font-weight: 700;
-        margin: 0;
+        font-size: 4.5rem;
+        font-weight: 500;
+        margin: 1.5rem 0;
+      }
+      h2 {
+        margin: 1.5rem 0;
+        margin-top: 3rem;
       }
       button {
+        width: 80%;
         color: white;
         border: 0;
-        padding: 1rem;
-        border-radius: 0.5rem;
-        font-size: 1.25rem;
-        margin: 1rem 0;
+        padding: 1.25rem 1rem;
+        border-radius: 1rem;
+        font-size: 1.5rem;
+        margin: 1.5rem auto;
       }
       .green-btn {
         background-color: rgb(108, 212, 178);
       }
+      .green-btn:active {
+        background-color: rgb(92, 179, 150);
+      }
       .grey-btn {
         background-color: #999;
+      }
+      .grey-btn:active {
+        background-color: #666;
       }
     }
   }
